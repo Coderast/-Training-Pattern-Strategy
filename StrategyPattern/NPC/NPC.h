@@ -1,6 +1,6 @@
 #pragma once
-#include "Hit/IHitable.h"
-#include "Trade/ITradable.h"
+#include "_Behavior/Hit/IHitable.h"
+#include "_Behavior/Trade/ITradable.h"
 #include "../Person/Person.h"
 #include <string>
 class NPC : public Person

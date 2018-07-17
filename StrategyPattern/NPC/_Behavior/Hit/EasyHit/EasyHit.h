@@ -3,5 +3,5 @@
 class EasyHit : public IHitable
 {
 public:
-	void Hit(Person* npc, const Person& person);
+	void Hit(NPC* npc, const Person& person);
 };

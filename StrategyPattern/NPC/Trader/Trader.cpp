@@ -1,6 +1,6 @@
 #include "Trader.h"
-#include "../Trade/ProTrader/ProTrader.h"
-#include "../Hit/EasyHit/EasyHit.h"
+#include "../_Behavior/Trade/ProTrader/ProTrader.h"
+#include "../_Behavior/Hit/EasyHit/EasyHit.h"
 
 
 Trader::Trader()
