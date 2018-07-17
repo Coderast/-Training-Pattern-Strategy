@@ -112,14 +112,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NPC\Hit\EasyHit\EasyHit.cpp" />
+    <ClCompile Include="NPC\Hit\PeaceHit\PeaceHit.cpp" />
     <ClCompile Include="NPC\NPC.cpp" />
     <ClCompile Include="Person\Person.cpp" />
-    <ClCompile Include="Person\Person.h" />
+    <ClCompile Include="NPC\Trader\Trader.cpp" />
+    <ClCompile Include="NPC\Trade\ProTrader\ProTrader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Person\Hit\IHitable.h" />
+    <ClInclude Include="NPC\Hit\EasyHit\EasyHit.h" />
+    <ClInclude Include="NPC\Hit\IHitable.h" />
+    <ClInclude Include="NPC\Hit\PeaceHit\PeaceHit.h" />
     <ClInclude Include="NPC\NPC.h" />
-    <ClInclude Include="Person\Trade\ITradable.h" />
+    <ClInclude Include="NPC\Trade\ITradable.h" />
+    <ClInclude Include="NPC\Trader\Trader.h" />
+    <ClInclude Include="NPC\Trade\ProTrader\ProTrader.h" />
+    <ClInclude Include="Person\Person.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

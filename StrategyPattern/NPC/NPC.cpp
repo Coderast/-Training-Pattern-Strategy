@@ -15,12 +15,22 @@ void NPC::Hello(const Person & person) const
 
 void NPC::Trade(const Person & person)
 {
-	tradeBehavior->Trade(this, person);
+	if (tradeBehavior != nullptr) 
+	{
+		tradeBehavior->Trade(this, person);
+		return;
+	}
+	throw std::runtime_error("Trade Behavior is Null Pointer!");
 }
 
 void NPC::Hit(const Person & person)
 {
-	hitBehavior->Hit(this, person);
+	if (hitBehavior != nullptr) 
+	{
+		hitBehavior->Hit(this, person);
+		return;
+	}
+	throw std::runtime_error("Hit Behavior is Null Pointer!");
 }
 
 void NPC::setHitBehavior(IHitable * hitable)

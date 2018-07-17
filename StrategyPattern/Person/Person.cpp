@@ -3,9 +3,10 @@
 
 void Person::setName(const std::string & name)
 {
+	this->name = name;
 }
 
 std::string Person::getName() const
 {
-	return std::string();
+	return this->name;
 }

@@ -1,6 +1,6 @@
 #pragma once
 
-class Person;
+#include "../../Person/Person.h"
 
 class ITradable
 {

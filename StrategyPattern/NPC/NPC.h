@@ -1,11 +1,11 @@
 #pragma once
-#include "../Person/Hit/IHitable.h"
-#include "../Person/Trade/ITradable.h"
+#include "Hit/IHitable.h"
+#include "Trade/ITradable.h"
 #include "../Person/Person.h"
 #include <string>
 class NPC : public Person
 {
-private:
+protected:
 	IHitable* hitBehavior;
 	ITradable* tradeBehavior;
 public:
@@ -17,6 +17,6 @@ public:
 
 	void setHitBehavior(IHitable *hitable);
 	void setTradeBehavior(ITradable *tradable);
-	~NPC();
+	virtual ~NPC();
 };
 
