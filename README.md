@@ -1,5 +1,5 @@
 # In short
-My traning project for learning pattern "Strategy"
+My training project for learning pattern "Strategy"
 # About
 ## Main hierarhy
 `Person` -> `NPC` -> [`Trader`, `Hippie`]
